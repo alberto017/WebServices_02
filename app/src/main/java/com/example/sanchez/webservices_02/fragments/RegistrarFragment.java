@@ -54,11 +54,11 @@ public class RegistrarFragment extends Fragment implements Response.Listener<JSO
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_registrar, container, false);
 
-        edt_codigo = view.findViewById(R.id.edt_codigo);
-        edt_nombre = view.findViewById(R.id.edt_nombre);
-        edt_precio = view.findViewById(R.id.edt_precio);
-        edt_fabricante = view.findViewById(R.id.edt_fabricante);
-        btn_agregar = view.findViewById(R.id.btn_agregar);
+        edt_codigo = view.findViewById(R.id.registrar_codigo);
+        edt_nombre = view.findViewById(R.id.registrar_nombre);
+        edt_precio = view.findViewById(R.id.registrar_precio);
+        edt_fabricante = view.findViewById(R.id.registrar_fabricante);
+        btn_agregar = view.findViewById(R.id.registrar_agregar);
 
         //Inicializamos la solicitud
         requestQueue = Volley.newRequestQueue(getContext());
@@ -73,13 +73,13 @@ public class RegistrarFragment extends Fragment implements Response.Listener<JSO
         btn_agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cargarWebService();
+                registrarProducto();
             }
         });
 
     }//onViewCreated
 
-    private void cargarWebService() {
+    private void registrarProducto() {
 
         //Instanciamos y condiguramos el progressDialog
         pd_registrar = new ProgressDialog(getContext());
@@ -87,7 +87,7 @@ public class RegistrarFragment extends Fragment implements Response.Listener<JSO
         pd_registrar.show();
 
         //Enviamos parametros de insercion por URL
-        String URL = "http://192.168.1.69:8080/webservice_01/registrar_producto.php?codigo=" + edt_codigo.getText().toString() + "&nombre=" + edt_nombre.getText().toString() + "&precio=" + edt_precio.getText().toString() + "&fabricante=" + edt_fabricante.getText().toString();
+        String URL = "http://192.168.1.68:8080/webservice_01/registrar_producto.php?codigo=" + edt_codigo.getText().toString() + "&nombre=" + edt_nombre.getText().toString() + "&precio=" + edt_precio.getText().toString() + "&fabricante=" + edt_fabricante.getText().toString();
         //Validacion que nos permita insertar informacion con espacios
         URL = URL.replace(" ", "%20");
         //Instanciamos un objeto estableciendo la forma de envio

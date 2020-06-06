@@ -10,7 +10,7 @@
     <!-- TODO: Update blank fragment layout -->
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="10dp">
 
         <TextView
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/edt_codigo"
+            android:id="@+id/registrar_codigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="92dp"
@@ -39,7 +39,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/edt_nombre"
+            android:id="@+id/registrar_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -49,10 +49,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_codigo" />
+            app:layout_constraintTop_toBottomOf="@+id/registrar_codigo" />
 
         <EditText
-            android:id="@+id/edt_precio"
+            android:id="@+id/registrar_precio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -62,10 +62,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_nombre" />
+            app:layout_constraintTop_toBottomOf="@+id/registrar_nombre" />
 
         <EditText
-            android:id="@+id/edt_fabricante"
+            android:id="@+id/registrar_fabricante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -74,10 +74,10 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_precio" />
+            app:layout_constraintTop_toBottomOf="@+id/registrar_precio" />
 
         <Button
-            android:id="@+id/btn_agregar"
+            android:id="@+id/registrar_agregar"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="381dp"
             android:layout_height="wrap_content"

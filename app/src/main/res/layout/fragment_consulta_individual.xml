@@ -24,5 +24,78 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/consultaIndividual_codigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Codigo"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/consultaIndividual_buscar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:text="Buscar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/consultaIndividual_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="283dp" />
+
+            <TextView
+                android:id="@+id/consultaIndividual_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <TextView
+                android:id="@+id/consultaIndividual_fabricante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fabricante"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="399dp" />
+        </LinearLayout>
+
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

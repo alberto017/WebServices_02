@@ -12,9 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
-import com.example.sanchez.webservices_02.fragments.ConsultaGrupalFragment;
+import com.example.sanchez.webservices_02.fragments.ConsultaCompletaFragment;
 import com.example.sanchez.webservices_02.fragments.ConsultaIndividualFragment;
 import com.example.sanchez.webservices_02.fragments.RegistrarFragment;
 
@@ -84,7 +83,7 @@ public class Principal extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_inicio) {
-           setFragment(new ConsultaGrupalFragment());
+           setFragment(new ConsultaCompletaFragment());
         } else if (id == R.id.nav_registrar) {
             setFragment(new RegistrarFragment());
         } else if (id == R.id.nav_lista) {
